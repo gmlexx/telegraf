@@ -28,7 +28,6 @@ To generate a file that ommits plugin sections, you can specify a filter for tha
 telegraf --sample-config --input-filter cpu:mem --output-filter influxdb_v2 --aggregator-filter : --processor-filter : > telegraf.conf
 ```
 
-
 [View the full list][flags] of Telegraf commands and flags or by running `telegraf --help`.
 
 ## Configuration Loading
@@ -540,7 +539,7 @@ The inverse of `tagpass`.  If a match is found the metric is discarded. This
 is tested on metrics after they have passed the `tagpass` test.
 
 > NOTE: Due to the way TOML is parsed, `tagpass` and `tagdrop` parameters must be
-defined at the *_end_* of the plugin definition, otherwise subsequent plugin config
+defined at the _end_ of the plugin definition, otherwise subsequent plugin config
 options will be interpreted as part of the tagpass/tagdrop tables.
 
 ### Modifiers

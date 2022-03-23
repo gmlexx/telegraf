@@ -19,7 +19,7 @@ To generate a file with specific inputs and outputs, you can use the
 --input-filter and --output-filter flags:
 
 ```sh
-telegraf --sample-config --input-filter cpu:mem:net:swap --output-filter influxdb:kafka config
+telegraf --sample-config --input-filter cpu:mem --output-filter influxdb_v2 > telegraf.conf
 ```
 
 To generate a file that ommits plugin sections, you can specify a filter for that section and only provide a `:` as the value:
